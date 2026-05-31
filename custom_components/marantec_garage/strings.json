@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Marantec Garage Door",
+        "description": "Enter the 49-bit code from your remote (as hex, e.g. 1300710DF869F) and choose the RF transmitter. The timing values let Home Assistant model the door's state; leave travel times at 0 to skip the opening/closing phases.",
+        "data": {
+          "code": "Remote code (hex)",
+          "transmitter": "RF transmitter",
+          "auto_close_delay": "Auto-close delay (seconds, from fully open)",
+          "travel_up": "Opening travel time (seconds, 0 to skip)",
+          "travel_down": "Closing travel time (seconds, 0 to skip)"
+        }
+      }
+    },
+    "error": {
+      "invalid_code": "The code must be a valid 49-bit hexadecimal value."
+    },
+    "abort": {
+      "no_transmitters": "No compatible RF transmitter is set up. Add an ESPHome or Broadlink RF transmitter first.",
+      "already_configured": "This Marantec code is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Marantec Garage Door options",
+        "data": {
+          "auto_close_delay": "Auto-close delay (seconds, from fully open)",
+          "travel_up": "Opening travel time (seconds, 0 to skip)",
+          "travel_down": "Closing travel time (seconds, 0 to skip)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "marantec_garage",
+  "name": "Marantec Garage Door",
+  "codeowners": ["@yeah"],
+  "config_flow": true,
+  "dependencies": ["radio_frequency"],
+  "documentation": "https://github.com/yeah/home-assistant-marantec",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "issue_tracker": "https://github.com/yeah/home-assistant-marantec/issues",
+  "requirements": [
+    "rf-protocols@git+https://github.com/yeah/rf-protocols.git@add-marantec-protocol"
+  ],
+  "version": "0.1.0"
+}

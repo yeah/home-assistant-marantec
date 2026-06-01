@@ -21,8 +21,6 @@ from collections.abc import Callable
 import logging
 from typing import Any
 
-from rf_protocols.commands.marantec import MarantecCommand
-
 from homeassistant.components.cover import (
     CoverDeviceClass,
     CoverEntity,
@@ -34,6 +32,7 @@ from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 from homeassistant.helpers.event import async_call_later
 
 from . import MarantecConfigEntry
+from ._marantec import MarantecCommand
 from .const import (
     CONF_AUTO_CLOSE_DELAY,
     CONF_CODE,

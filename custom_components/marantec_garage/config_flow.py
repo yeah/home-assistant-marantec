@@ -4,8 +4,6 @@ from __future__ import annotations
 
 from typing import Any
 
-from rf_protocols import ModulationType
-from rf_protocols.commands.marantec import MarantecCommand
 import voluptuous as vol
 
 from homeassistant.components.radio_frequency import async_get_transmitters
@@ -14,6 +12,7 @@ from homeassistant.core import callback
 from homeassistant.exceptions import HomeAssistantError
 
 from . import MarantecConfigEntry
+from ._marantec import MarantecCommand, ModulationType
 from .const import (
     CONF_AUTO_CLOSE_DELAY,
     CONF_CODE,

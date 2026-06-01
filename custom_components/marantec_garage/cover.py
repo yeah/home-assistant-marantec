@@ -61,7 +61,7 @@ class MarantecCover(CoverEntity):
     """A single-button, open-only, timed-optimistic Marantec garage door."""
 
     _attr_has_entity_name = True
-    _attr_name = None
+    _attr_translation_key = "marantec_garage"
     _attr_device_class = CoverDeviceClass.GARAGE
     # Open is the only user action. Closing is the door's own auto-close.
     _attr_supported_features = CoverEntityFeature.OPEN

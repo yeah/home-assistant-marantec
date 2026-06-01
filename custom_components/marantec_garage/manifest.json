@@ -9,7 +9,7 @@
   "iot_class": "assumed_state",
   "issue_tracker": "https://github.com/yeah/home-assistant-marantec/issues",
   "requirements": [
-    "rf-protocols@git+https://github.com/yeah/rf-protocols.git@add-marantec-protocol"
+    "rf-protocols@git+https://github.com/yeah/rf-protocols.git@d8e2f7dfd6635ce4e99e2506aa89adf508a70598"
   ],
   "version": "0.1.0"
 }

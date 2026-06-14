@@ -8,6 +8,6 @@
   "integration_type": "device",
   "iot_class": "assumed_state",
   "issue_tracker": "https://github.com/yeah/home-assistant-marantec/issues",
-  "requirements": [],
+  "requirements": ["rf-protocols>=4.1.0"],
   "version": "0.1.0"
 }

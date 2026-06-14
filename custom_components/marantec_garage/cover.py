@@ -30,9 +30,9 @@ from homeassistant.components.radio_frequency import async_send_command
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 from homeassistant.helpers.event import async_call_later
+from rf_protocols.commands.marantec import MarantecCommand
 
 from . import MarantecConfigEntry
-from ._marantec import MarantecCommand
 from .const import (
     CONF_AUTO_CLOSE_DELAY,
     CONF_CODE,

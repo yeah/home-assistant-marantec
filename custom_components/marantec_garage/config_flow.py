@@ -11,8 +11,10 @@ from homeassistant.config_entries import ConfigFlow, ConfigFlowResult, OptionsFl
 from homeassistant.core import callback
 from homeassistant.exceptions import HomeAssistantError
 
+from rf_protocols import ModulationType
+from rf_protocols.commands.marantec import MarantecCommand
+
 from . import MarantecConfigEntry
-from ._marantec import MarantecCommand, ModulationType
 from .const import (
     CONF_AUTO_CLOSE_DELAY,
     CONF_CODE,
